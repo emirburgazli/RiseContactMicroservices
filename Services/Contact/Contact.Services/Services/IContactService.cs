@@ -11,9 +11,10 @@ namespace Contact.Services.Services
     interface IContactService
     {
         Task<Response<List<PersonDto>>> GetAllAsync();
-
-        Task<Response<PersonDto>> CreateAsync(Person person);
-
+        Task<Response<PersonDto>> CreateAsync(PersonCreateDto person);
         Task<Response<PersonDto>> GetByIdAsync(int Id);
+        Task<Response<NoContent>> UpdatePersonAsync(PersonUpdateDto personUpdateDto);
+        Task<Response<NoContent>> DeletePersonAsync(int Id);
+
     }
 }
