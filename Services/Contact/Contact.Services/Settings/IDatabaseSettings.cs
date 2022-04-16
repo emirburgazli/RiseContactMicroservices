@@ -1,6 +1,6 @@
 ﻿namespace Contact.Services.Settings
 {
-    interface IDatabaseSettings
+   public interface IDatabaseSettings
     {
         public string PersonCollectionName { get; set; }
         public string PersonInfoCollectionName { get; set; }

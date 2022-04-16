@@ -16,8 +16,8 @@ namespace Contact.Services.Mapping
             CreateMap<Person, PersonCreateDto>().ReverseMap();
             CreateMap<Person, PersonUpdateDto>().ReverseMap();
             
-            CreateMap<PersonCreateDto,Person>().ReverseMap();
-            CreateMap<PersonUpdateDto, Person>().ReverseMap();
+            //CreateMap<PersonCreateDto,Person>().ReverseMap();
+            //CreateMap<PersonUpdateDto, Person>().ReverseMap();
 
 
         }

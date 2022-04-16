@@ -9,7 +9,7 @@ namespace Contact.Services.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    internal class ContactController : CustomBaseController
+    public class ContactController : CustomBaseController
     {
 
         private readonly IContactService _contactService;
@@ -19,15 +19,16 @@ namespace Contact.Services.Controllers
             _contactService = contactService;
         }
 
-
+        [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var response = await _contactService.GetAllAsync();
+          
             return CreateActionResultInstance(response);
         }
 
         [HttpGet("{Id}")]
-        public async Task<IActionResult> GetById(int Id)
+        public async Task<IActionResult> GetById(string Id)
         {
             var response = await _contactService.GetByIdAsync(Id);
             return CreateActionResultInstance(response);
@@ -47,8 +48,8 @@ namespace Contact.Services.Controllers
             return CreateActionResultInstance(response);
         }
 
-        [HttpGet("Id")]
-        public async Task<IActionResult> Delete(int  Id)
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> Delete(string  Id)
         {
             var response = await _contactService.DeletePersonAsync(Id);
             return CreateActionResultInstance(response);

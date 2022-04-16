@@ -2,7 +2,7 @@
 {
     public class PersonContactInfoDto
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
 
         public string PhoneNumber { get; set; }
 

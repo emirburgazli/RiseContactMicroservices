@@ -23,7 +23,7 @@ namespace Contact.Services
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IContactService, ContactService>();
-
+             
 
             services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
@@ -46,6 +46,7 @@ namespace Contact.Services
         {
             if (env.IsDevelopment())
             {
+                app.UseAuthorization();
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Contact.Services v1"));

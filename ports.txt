@@ -1,2 +1,6 @@
 Contacts
 -ContactAPI => 5011
+
+
+docker => 9000
+mongodb=> 27017

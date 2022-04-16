@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Contact.Services.Services
 {
-    internal class ContactService : IContactService
+    public class ContactService : IContactService
     {
-        private readonly IMongoCollection<Person> _personCollection;
-        private readonly IMongoCollection<PersonContactInfo> _personContactInfoCollection;
-        private readonly IMapper _mapper;
+        public readonly IMongoCollection<Person> _personCollection;
+        public readonly IMongoCollection<PersonContactInfo> _personContactInfoCollection;
+        public readonly IMapper _mapper;
 
         public ContactService(IMapper mapper, IDatabaseSettings databaseSettings)
         {
@@ -24,6 +24,7 @@ namespace Contact.Services.Services
 
             _personCollection = database.GetCollection<Person>(databaseSettings.PersonCollectionName);
             _personContactInfoCollection = database.GetCollection<PersonContactInfo>(databaseSettings.PersonInfoCollectionName);
+            _mapper = mapper;
             _mapper = mapper;
         }
 
@@ -46,18 +47,20 @@ namespace Contact.Services.Services
         public async Task<Response<PersonDto>> CreateAsync(PersonCreateDto person)
         {
             var newPerson = _mapper.Map<Person>(person);
+
+            await _personCollection.InsertOneAsync(newPerson);
             PersonContactInfo personContactInfo = new PersonContactInfo
             {
+                ID=newPerson.ID,
                 Email = person.personContactInfo.Email,
                 Location = person.personContactInfo.Location,
                 PhoneNumber = person.personContactInfo.PhoneNumber
             };
             await _personContactInfoCollection.InsertOneAsync(personContactInfo);
-            await _personCollection.InsertOneAsync(newPerson);
             return Response<PersonDto>.Success(_mapper.Map<PersonDto>(newPerson), 200);
         }
 
-        public async Task<Response<PersonDto>> GetByIdAsync(int Id)
+        public async Task<Response<PersonDto>> GetByIdAsync(string Id)
         {
             var person = await _personCollection.Find<Person>(x => x.ID == Id).FirstOrDefaultAsync();
             if (person == null)
@@ -81,7 +84,7 @@ namespace Contact.Services.Services
             return Response<NoContent>.Success(204);
         }
 
-        public async Task<Response<NoContent>> DeletePersonAsync(int Id)
+        public async Task<Response<NoContent>> DeletePersonAsync(string Id)
         {
             var deletePerson = await _personCollection.DeleteOneAsync(x => x.ID == Id);
 

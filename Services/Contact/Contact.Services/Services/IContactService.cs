@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Contact.Services.Services
 {
-    interface IContactService
+   public interface IContactService
     {
         Task<Response<List<PersonDto>>> GetAllAsync();
         Task<Response<PersonDto>> CreateAsync(PersonCreateDto person);
-        Task<Response<PersonDto>> GetByIdAsync(int Id);
+        Task<Response<PersonDto>> GetByIdAsync(string Id);
         Task<Response<NoContent>> UpdatePersonAsync(PersonUpdateDto personUpdateDto);
-        Task<Response<NoContent>> DeletePersonAsync(int Id);
+        Task<Response<NoContent>> DeletePersonAsync(string Id);
 
     }
 }
