@@ -1,0 +1,7 @@
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Person.Services.csproj.AssemblyReference.cache
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Person.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Person.Services.AssemblyInfoInputs.cache
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Person.Services.AssemblyInfo.cs
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Person.Services.csproj.CoreCompileInputs.cache
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Person.Services.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Person.Services.MvcApplicationPartsAssemblyInfo.cache
