@@ -1,0 +1,7 @@
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Gateways\Gateways\obj\Debug\net5.0\Gateways.csproj.AssemblyReference.cache
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Gateways\Gateways\obj\Debug\net5.0\Gateways.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Gateways\Gateways\obj\Debug\net5.0\Gateways.AssemblyInfoInputs.cache
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Gateways\Gateways\obj\Debug\net5.0\Gateways.AssemblyInfo.cs
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Gateways\Gateways\obj\Debug\net5.0\Gateways.csproj.CoreCompileInputs.cache
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Gateways\Gateways\obj\Debug\net5.0\Gateways.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Gateways\Gateways\obj\Debug\net5.0\Gateways.MvcApplicationPartsAssemblyInfo.cache
