@@ -10,6 +10,6 @@ namespace Report.Services.Services
 {
    public  interface IReportService
     {
-        Task<MemoryStream> GetExcelReporting();
+        Task<MemoryStream> GetExcelReporting(string location);
     }
 }

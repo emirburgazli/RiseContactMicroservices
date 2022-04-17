@@ -23,8 +23,6 @@ namespace Contact.Services
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IContactService, ContactService>();
-             
-
             services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
 

@@ -16,9 +16,11 @@ namespace Report.Services.Controllers
             _reportService = reportService;
         }
 
-        public async Task<IActionResult> GetExcel()
+        [HttpGet]
+        [Route("/api/[controller]/GetExcel/{location}")]
+        public async Task<IActionResult> GetExcel(string location)
         {
-            var stream = await _reportService.GetExcelReporting();
+            var stream = await _reportService.GetExcelReporting(location);
             return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "contactReport.xlsx");
         }
     }

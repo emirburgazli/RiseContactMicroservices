@@ -1,7 +1,10 @@
 ﻿using Contact.Services.Dtos;
+using Contact.Services.Models;
 using Contact.Services.Services;
 using Contact.Shared.ControllerBases;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace Contact.Services.Controllers
@@ -23,7 +26,7 @@ namespace Contact.Services.Controllers
         public async Task<IActionResult> GetAll()
         {
             var response = await _contactService.GetAllAsync();
-          
+
             return CreateActionResultInstance(response);
         }
 
@@ -40,7 +43,7 @@ namespace Contact.Services.Controllers
             var response = await _contactService.CreateAsync(personCreateDto);
             return CreateActionResultInstance(response);
         }
-        
+
         [HttpPut]
         public async Task<IActionResult> Update(PersonUpdateDto personUpdateDto)
         {
@@ -49,12 +52,12 @@ namespace Contact.Services.Controllers
         }
 
         [HttpDelete("{Id}")]
-        public async Task<IActionResult> Delete(string  Id)
+        public async Task<IActionResult> Delete(string Id)
         {
             var response = await _contactService.DeletePersonAsync(Id);
             return CreateActionResultInstance(response);
         }
 
-
+        
     }
 }

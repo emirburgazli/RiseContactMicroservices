@@ -51,7 +51,7 @@ namespace Contact.Services.Services
             await _personCollection.InsertOneAsync(newPerson);
             PersonContactInfo personContactInfo = new PersonContactInfo
             {
-                ID=newPerson.ID,
+                ID = newPerson.ID,
                 Email = person.personContactInfo.Email,
                 Location = person.personContactInfo.Location,
                 PhoneNumber = person.personContactInfo.PhoneNumber
@@ -88,14 +88,25 @@ namespace Contact.Services.Services
         {
             var deletePerson = await _personCollection.DeleteOneAsync(x => x.ID == Id);
 
-            if (deletePerson.DeletedCount >0)
+            if (deletePerson.DeletedCount > 0)
             {
                 return Response<NoContent>.Success(204);
             }
             else
             {
-                return Response<NoContent>.Fail("Person Not Found",404);
+                return Response<NoContent>.Fail("Person Not Found", 404);
             }
+        }
+
+
+        //grpc ile iki mikroservis arası iletişimi sağlayamadığımdan raporlama işlemini contact mikroservisine taşımış oldum.
+        public async Task<List<Person>> GetExportReportDataByLocation(string Location)
+        {
+            //ilgili şehirde ki contactları listeleyen rapor... !
+
+            var data = _personCollection.Find(x => x.personContactInfo.Location == Location).ToListAsync();
+            return await data;
+
         }
     }
 }

@@ -3,6 +3,7 @@ using Contact.Services.Models;
 using Contact.Shared.Dtos;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -15,6 +16,7 @@ namespace Contact.Services.Services
         Task<Response<PersonDto>> GetByIdAsync(string Id);
         Task<Response<NoContent>> UpdatePersonAsync(PersonUpdateDto personUpdateDto);
         Task<Response<NoContent>> DeletePersonAsync(string Id);
+        Task<List<Person>> GetExportReportDataByLocation(string Location);
 
     }
 }
