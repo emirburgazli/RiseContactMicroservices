@@ -1,10 +1,3 @@
-C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.csproj.AssemblyReference.cache
-C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.AssemblyInfoInputs.cache
-C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.AssemblyInfo.cs
-C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.csproj.CoreCompileInputs.cache
-C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\bin\Debug\net5.0\appsettings.json
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\bin\Debug\net5.0\Contact.Services.exe
@@ -42,6 +35,13 @@ C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.S
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\bin\Debug\net5.0\Contact.Shared.dll
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\bin\Debug\net5.0\Contact.Shared.pdb
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.csproj.AssemblyReference.cache
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.AssemblyInfoInputs.cache
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.AssemblyInfo.cs
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.csproj.CoreCompileInputs.cache
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\Contact.Services.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\staticwebassets\Contact.Services.StaticWebAssets.Manifest.cache
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\staticwebassets\Contact.Services.StaticWebAssets.xml
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Services\Contact\Contact.Services\obj\Debug\net5.0\scopedcss\bundle\Contact.Services.styles.css

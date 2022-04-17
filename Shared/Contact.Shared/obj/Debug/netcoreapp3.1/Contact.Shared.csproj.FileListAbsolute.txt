@@ -1,10 +1,10 @@
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\bin\Debug\netcoreapp3.1\Contact.Shared.deps.json
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\bin\Debug\netcoreapp3.1\Contact.Shared.dll
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\bin\Debug\netcoreapp3.1\Contact.Shared.pdb
-C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\obj\Debug\netcoreapp3.1\Contact.Shared.csproj.AssemblyReference.cache
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\obj\Debug\netcoreapp3.1\Contact.Shared.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\obj\Debug\netcoreapp3.1\Contact.Shared.AssemblyInfoInputs.cache
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\obj\Debug\netcoreapp3.1\Contact.Shared.AssemblyInfo.cs
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\obj\Debug\netcoreapp3.1\Contact.Shared.csproj.CoreCompileInputs.cache
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\obj\Debug\netcoreapp3.1\Contact.Shared.dll
 C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\obj\Debug\netcoreapp3.1\Contact.Shared.pdb
+C:\Users\ECRİN\Source\Repos\RiseContactMicroservices\Shared\Contact.Shared\obj\Debug\netcoreapp3.1\Contact.Shared.csproj.AssemblyReference.cache

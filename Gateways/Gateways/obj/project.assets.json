@@ -500,16 +500,12 @@
       },
       "Contact.Shared/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
           "bin/placeholder/Contact.Shared.dll": {}
         },
         "runtime": {
           "bin/placeholder/Contact.Shared.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
