@@ -3,5 +3,6 @@ Contacts
 -ReportsAPI=5012
 
 docker => 9000
+reportDb=> 1440 User: SA Pass: vV5r9tn0M4@
 mongodb=> 27017
 gateways => 5000

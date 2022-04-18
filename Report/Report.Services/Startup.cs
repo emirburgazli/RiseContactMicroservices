@@ -4,12 +4,14 @@ using Contact.Services.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using Report.Services.Models;
 using Report.Services.Services;
 using System;
 using System.Collections.Generic;
@@ -30,16 +32,18 @@ namespace Report.Services
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IContactService, ContactService>();
-            services.AddScoped<IReportService, ReportService>();
-            services.AddAutoMapper(typeof(Startup));
-            services.AddControllers();
-
-            services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
-            services.AddSingleton<IDatabaseSettings>(sp =>
-            {
-                return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
-            });
+            //services.AddScoped<IContactService, ContactService>();
+            //services.AddScoped<IReportService, ReportService>();
+            //services.AddAutoMapper(typeof(Startup));
+            //services.AddControllers();
+            services.AddDbContext<Context>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("ConnectionStrings")));
+            services.AddControllersWithViews();
+            //services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
+            //services.AddSingleton<IDatabaseSettings>(sp =>
+            //{
+            //    return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
+            //});
 
             services.AddSwaggerGen(c =>
             {
